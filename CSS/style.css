@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Muli;
+  font-family: Muli, sans-serif;
 }
 
 html {
@@ -59,6 +59,10 @@ hr {
 
 .btn-white:hover {
   background-color: #ffce33;
+}
+
+.half {
+  width: 50%;
 }
 
 .themes {
@@ -409,11 +413,142 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px;
+  margin-top: 100px;
 }
 
 .alert h2 {
   color: #fff;
   font-size: 26px;
+}
+
+/* about us title - about-us.html */
+.about-us-title {
+  width: 75%;
+  padding: 50px 20px;
+}
+
+.about-us-title h2 {
+  color: #333333;
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.about-us-title p {
+  color: #7a7a7a;
+  font-size: 16px;
+}
+
+/* our work process - about-us.html */
+.work-process{
+  padding: 20px;
+}
+
+.work-process h2 {
+  font-size: 32px;
+  padding: 50px 0;
+  color: #333333;
+}
+
+.full-process {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.full-process h4 {
+  text-align: center;
+  color: #333333;
+  margin: 25px 0;
+}
+
+.process{
+  margin: 20px;
+}
+
+.process .icon {
+  height: 154px;
+  width: 154px;
+  border: 2px dashed #cccccc;
+  border-radius: 50%;
+}
+
+.process .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process .icon i {
+  font-size: 50px;
+  color: #242424;
+}
+
+.process .icon h5 {
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  color: #fff;
+  background-color: #f44040;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+/* faq's about us - about-us.html */
+#faq-about-us {
+  background-color: #f0f1f4;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px 0;
+  padding: 100px 0;
+}
+
+.about-content .content {
+  padding: 20px;
+}
+
+.about-content .content h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333333;
+}
+
+.about-content .content p {
+  font-size: 16px;
+  color: #7a7a7a;
+}
+
+/* qualities of an elite author - about-us.html */
+.elite-author{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.elite-author h2{
+  font-size: 28px;
+  color: #333333;
+  margin: 30px 0;
+}
+
+.elite-author p{
+  color: #7a7a7a;
+  font-size: 16px;
+}
+
+.elite-author img{
+  display: block;
+  width: 70%;
+  margin: auto;
 }
 
 /* footer design */
@@ -451,7 +586,7 @@ footer {
 .footer-links a {
   text-decoration: none;
   color: #fff;
-  margin: 0 2.5%;
+  margin: 0 2%;
 }
 
 .footer-links a:hover {
@@ -461,7 +596,7 @@ footer {
 .footer-links i {
   font-size: 20px;
   color: #fff;
-  margin: 0 2.5%;
+  margin: 0 2%;
   cursor: pointer;
 }
 
@@ -520,7 +655,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #f0f1f4;
-    padding: 7px 0 0 0; 
+    padding: 7px 0 0 0;
     transition: 0.3s;
   }
 
@@ -558,6 +693,27 @@ footer {
   .alert h2 {
     padding: 0 0 20px 0;
   }
+
+  .half{
+    width: 100%;
+  }
+
+  .elite-author{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elite-author img{
+    padding: 50px 0;
+  }
+
+  .footer-links a {
+    margin: 0 2.5%;
+  }
+  
+  .footer-links i {
+    margin: 0 2.5%;
+  }
 }
 
 /* 600px and less */
@@ -590,5 +746,27 @@ footer {
   .cards {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process{
+    padding: 25px;
+  }
+
+  .about-us-title{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .full-process{
+    justify-content: center;
+  }
+
+  .process{
+    margin: 10px;
   }
 }
