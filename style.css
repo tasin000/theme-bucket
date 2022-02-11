@@ -55,7 +55,18 @@
 }
 
 .title{
-    margin: 45px 0;
+    padding: 0 0 50px 0;
+}
+
+.title h2{
+    color: #333333;
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.title p{
+    color: #7a7a7a;
+    font-size: 16px;
 }
 
 .demo{
@@ -126,6 +137,7 @@ header{
 /* popular themes design */
 .popular-theme{
     position: relative;
+    padding: 100px 0;
 }
 
 .theme{
@@ -156,7 +168,7 @@ header{
 .theme h2{
     color: #151515;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     margin: 30px 10px 10px 10px;
 }
 
@@ -180,13 +192,99 @@ header{
 
 .popular-theme button{
     margin: 50px auto;
-    
 }
 
 .vertical-center {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translateX(-50%,);
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* why to choose section */
+#why-to-choose{
+    background-color: #F0F1F4;
+}
+
+.reason-to-choose{
+    padding: 100px 0;
+}
+
+.card{
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.card i{
+    color: #E63C2A;
+    font-size: 48px;
+    padding: 15px 0;
+}
+
+.card h2{
+    color: #151515;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.card p{
+    color: #8c8c8c;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* client section design */
+#our-client-speak{
+    padding: 100px 0;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.client-card{
+    margin: 20px;
+}
+
+.message{
+    padding: 32px;
+    background-color: #F3F4F6;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.client-name{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.client-carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #cccccc;
+}
+
+.circle:hover{
+    background: #1c1c1c;
+    cursor: pointer;
+}
+
+.active-circle{
+    background-color: #1c1c1c;
 }
