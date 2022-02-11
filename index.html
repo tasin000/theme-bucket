@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ThemeBucket is one of the most responsive developers I've come across in the entirety of ThemeForest. And ResumeX is, by far, the best designed, most polished, slick and professional CV/Resume template in not only the entire Evato Market, but on the interwebs at the time of this review. Support TB and this theme without a moment's hesitation!">
+    <meta name="description"
+        content="ThemeBucket is one of the most responsive developers I've come across in the entirety of ThemeForest. And ResumeX is, by far, the best designed, most polished, slick and professional CV/Resume template in not only the entire Evato Market, but on the interwebs at the time of this review. Support TB and this theme without a moment's hesitation!">
     <title>ThemeBucket - Your trusted friend who can do magic with WordPress</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="media/cropped-tb-febi-180x180.png" type="image/x-icon">
@@ -23,18 +24,24 @@
     <header>
         <nav>
             <div class="nav-bar container">
-                <div class="logo">
-                    <a href="#">
-                        <img src="media/tblogo-color.svg" alt="">
-                    </a>
+                <div class="logo-with-toggle-bar">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="media/tblogo-color.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="toggle-bar">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </div>
                 </div>
 
-                <div class="nav-links">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Themes</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Our Team</a>
-                    <a href="#">Contact Us</a>
+                <div class="nav-links none">
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="/src/themes.html">Themes</a>
+                    <a href="/src/about-us.html">About Us</a>
+                    <a href="/src/our-team.html">Our Team</a>
+                    <a href="/src/contact-us.html">Contact Us</a>
                 </div>
             </div>
         </nav>
@@ -43,9 +50,14 @@
     <main>
         <section id="home-section">
             <div class="home container">
-                <h5>Get the perfect WordPress theme & plugins for your</h5>
-                <h2>PROJECT</h2>
-                <button class="btn-orange">VIEW ALL THEMES</button>
+                <div class="w-50">
+                    <h5>Get the perfect WordPress theme & plugins for your</h5>
+                    <h2>PROJECT</h2>
+                    <button class="btn-orange" onclick="window.location.href = 'src/themes.html'">VIEW ALL
+                        THEMES</button>
+                </div>
+
+                <div class="w-50"></div>
             </div>
         </section>
 
@@ -55,49 +67,56 @@
                     <h2>Some of our popular themes</h2>
                     <p>Choose your favorite theme from our collection of premium WordPress themes.</p>
                 </div>
-                <div class="cards">
-                    <div class="theme">
+                <div class="themes">
+                    <div class="theme" onclick="window.open('http://massivewp.lab.themebucket.net/')">
                         <div class="img-with-badge">
                             <h3 class="badge-bg-orange">WordPress</h3>
                             <img src="media/massive-theme.jpg" alt="">
                         </div>
-                        <h2>Massive</h2>
-                        <p>Responsive Multi-Purpose WordPress Theme</p>
-                        <div class="demo">
-                            <a href="http://massivewp.lab.themebucket.net/" target="_blank">View Demo <i
-                                    class="fa-solid fa-right-long"></i></a>
+                        <div class="contents">
+                            <h2>Massive</h2>
+                            <p>Responsive Multi-Purpose WordPress Theme</p>
+                            <div class="demo">
+                                <a href="http://massivewp.lab.themebucket.net/" target="_blank">View Demo <i
+                                        class="fa-solid fa-right-long"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="theme">
+                    <div class="theme" onclick="window.open('http://bucketadmin.lab.themebucket.net/')">
                         <div class="img-with-badge">
                             <h3 class="badge-bg-yellow">HTML</h3>
                             <img src="media/bucket-admin.jpg" alt="">
                         </div>
-                        <h2>Bucket Admin</h2>
-                        <p>Bootstrap Responsive Flat Dashboard Admin</p>
-                        <div class="demo">
-                            <a href="http://bucketadmin.lab.themebucket.net/" target="_blank">View Demo <i
-                                    class="fa-solid fa-right-long"></i></a>
+                        <div class="contents">
+                            <h2>Bucket Admin</h2>
+                            <p>Bootstrap Responsive Flat Dashboard Admin</p>
+                            <div class="demo">
+                                <a href="http://bucketadmin.lab.themebucket.net/" target="_blank">View Demo <i
+                                        class="fa-solid fa-right-long"></i></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="theme">
+                    <div class="theme" onclick="window.open('http://resumexwp.lab.themebucket.net/')">
                         <div class="img-with-badge">
                             <h3 class="badge-bg-orange">WordPress</h3>
                             <img src="media/resumex-1024x664.jpg" alt="">
                         </div>
-                        <h2>ResumeX</h2>
-                        <p>Multipurpose Resume & One Page Portfolio</p>
-                        <div class="demo">
-                            <a href="http://resumexwp.lab.themebucket.net/" target="_blank">View Demo <i
-                                    class="fa-solid fa-right-long"></i></a>
+                        <div class="contents">
+                            <h2>ResumeX</h2>
+                            <p>Multipurpose Resume & One Page Portfolio</p>
+                            <div class="demo">
+                                <a href="http://resumexwp.lab.themebucket.net/" target="_blank">View Demo <i
+                                        class="fa-solid fa-right-long"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="vertical-center">
-                    <button class="btn-orange">VIEW ALL THEMES</button>
+                    <button class="btn-orange" onclick="window.location.href = 'src/themes.html'">VIEW ALL
+                        THEMES</button>
                 </div>
             </div>
         </section>
@@ -173,10 +192,15 @@
 
                 <div class="client-carousel">
                     <div class="client-card w-50">
-                        <div class="message">
+                        <div class="msg-container">
+                            <div class="message">
 
-                            This theme is fun to work with. Big plus: it already comes with a lot of pre-assembled
-                            styles which is a helpful start for a new project. I will buy it again.
+                                This theme is fun to work with. Big plus: it already comes with a lot of pre-assembled
+                                styles which is a helpful start for a new project. I will buy it again.
+    
+                            </div>
+    
+                            <div class="triangle-down"></div>
                         </div>
 
                         <div class="client-name">
@@ -185,12 +209,16 @@
                     </div>
 
                     <div class="client-card w-50">
-                        <div class="message">
+                        <div class="msg-container">
+                            <div class="message">
 
-                            ThemeBucket is one of the most responsive developers I've come across in the entirety of
-                            ThemeForest. And ResumeX is, by far, the best designed, most polished, slick and
-                            professional CV/Resume template in not only the entire Evato Market, but on the interwebs at
-                            the time of this review. Support TB and this theme without a moment's hesitation!
+                                ThemeBucket is one of the most responsive developers I've come across in the entirety of
+                                ThemeForest. And ResumeX is, by far, the best designed, most polished, slick and
+                                professional CV/Resume template in not only the entire Evato Market, but on the interwebs at
+                                the time of this review. Support TB and this theme without a moment's hesitation!
+                            </div>
+    
+                            <div class="triangle-down"></div>
                         </div>
 
                         <div class="client-name">
@@ -210,8 +238,36 @@
     </main>
 
     <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="media/tblogo-icon.png" alt="" onclick="window.location.href = '/index.html'">
+                <p>Your trusted friend who can do magic with WordPress</p>
+            </div>
 
+            <div class="footer-links">
+                <a href="/index.html">Home</a>
+                <a href="/src/themes.html">Themes</a>
+                <a href="/src/about-us.html">About</a>
+                <a href="/src/our-team.html">Team</a>
+                <a href="/src/contact-us.html">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <i class="fa-brands fa-facebook-square"
+                    onclick="window.open('https://www.facebook.com/themebuckets/')"></i>
+                <i class="fa-brands fa-twitter" onclick="window.open('https://twitter.com/theme_bucket')"></i>
+                <i class="fa-brands fa-dribbble" onclick="window.open('https://dribbble.com/themebucket')"></i>
+                <i class="fa-brands fa-behance" onclick="window.open('https://www.behance.net/themebucket')"></i>
+                <i class="fa-brands fa-deviantart" onclick="window.open('https://www.deviantart.com/themebucket')"></i>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2013 – 2022 ThemeBucket. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
