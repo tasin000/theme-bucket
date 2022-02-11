@@ -143,11 +143,12 @@ header {
 
 /* home section design */
 #home-section {
-  background: url("media/banner.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("media/banner.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 2% 1%;
 }
 
 .home {
@@ -164,14 +165,14 @@ header {
 
 .home h5 {
   font-size: 18px;
-  color: #333333;
+  color: #f3f4f6;
 }
 
 .home h2 {
   font-size: 60px;
   font-family: Muli-bold;
   font-weight: 700;
-  color: #333333;
+  color: #f3f4f6;
 }
 
 .home button {
@@ -338,7 +339,7 @@ header {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 1.5%;
   background-color: #cccccc;
 }
 
@@ -386,7 +387,7 @@ footer {
 .footer-links a {
   text-decoration: none;
   color: #fff;
-  margin: 0 25px;
+  margin: 0 2.5%;
 }
 
 .footer-links a:hover {
@@ -396,7 +397,7 @@ footer {
 .footer-links i {
   font-size: 20px;
   color: #fff;
-  margin: 0 20px;
+  margin: 0 2.5%;
   cursor: pointer;
 }
 
@@ -418,7 +419,7 @@ footer {
   }
 
   .title {
-    margin: 0 30px;
+    margin: 0 3%;
   }
 
   .themes {
@@ -436,7 +437,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 25px;
+    margin: 0 3%;
   }
 }
 
@@ -487,10 +488,6 @@ footer {
     width: 100%;
   }
 
-  #home-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('media/banner.jpg');
-  }
-
   .home {
     display: flex;
     flex-direction: column;
@@ -498,13 +495,8 @@ footer {
     align-items: center;
   }
 
-  .home h5{
-    color: #fff;
-  }
-
   .home h2{
       font-size: 35px;
-      color: #fff;
   }
 
   .home .w-50 {
