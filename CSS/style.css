@@ -1,12 +1,12 @@
 /* fonts */
 @font-face {
   font-family: Muli;
-  src: url("fonts/Muli.ttf");
+  src: url("../fonts/Muli.ttf");
 }
 
 @font-face {
   font-family: Muli-bold;
-  src: url("fonts/Muli-Bold.ttf");
+  src: url("../fonts/Muli-Bold.ttf");
 }
 
 /* reset codes and common codes */
@@ -19,6 +19,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+hr {
+  border: 0.1px solid #eceff2;
 }
 
 .container {
@@ -39,6 +43,21 @@ html {
 
 .btn-orange:hover {
   color: #000;
+  background-color: #ffce33;
+}
+
+.btn-white {
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-white:hover {
   background-color: #ffce33;
 }
 
@@ -88,6 +107,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+nav {
   background-color: #fff;
 }
 
@@ -132,6 +154,7 @@ header {
 
 .toggle-bar i {
   color: #fff;
+  font-size: 20px;
 }
 
 .logo-with-toggle-bar {
@@ -141,9 +164,10 @@ header {
   align-items: center;
 }
 
-/* home section design */
+/* home section design - index.html */
 #home-section {
-  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("media/banner.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/banner.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -179,10 +203,15 @@ header {
   margin: 25px 0;
 }
 
-/* popular themes design */
+/* popular themes design - index.html & themes.html  */
 .popular-theme {
   position: relative;
   padding: 100px 0;
+}
+
+.premium-theme {
+  position: relative;
+  padding: 30px 0;
 }
 
 .theme {
@@ -252,7 +281,7 @@ header {
   align-items: center;
 }
 
-/* why to choose section */
+/* why to choose section - index.html  */
 #why-to-choose {
   background-color: #f0f1f4;
 }
@@ -286,7 +315,7 @@ header {
   padding: 10px 0;
 }
 
-/* client section design */
+/* client section design - index.html  */
 #our-client-speak {
   padding: 100px 0;
 }
@@ -350,6 +379,41 @@ header {
 
 .active-circle {
   background-color: #1c1c1c;
+}
+
+/* premium themes - themes.html */
+.themes-title {
+  padding: 4% 0;
+  margin: 0 20px;
+}
+
+.themes-title h2 {
+  color: #333333;
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.themes-title p {
+  color: #7a7a7a;
+  font-size: 16px;
+}
+
+/* alert - themes.html & about-us.html */
+#download-our-themes {
+  background-color: #f44040;
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.alert h2 {
+  color: #fff;
+  font-size: 26px;
 }
 
 /* footer design */
@@ -443,6 +507,10 @@ footer {
 
 /* 768px and less */
 @media screen and (max-width: 768px) {
+  nav {
+    background-color: #f0f1f4;
+  }
+
   .nav-bar {
     display: flex;
     flex-direction: column;
@@ -452,8 +520,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #f0f1f4;
-    padding: 10px 0;
-    margin: 10px 0;
+    padding: 7px 0 0 0; 
     transition: 0.3s;
   }
 
@@ -473,12 +540,23 @@ footer {
     display: flex;
   }
 
-  .home{
-      padding: 50px 0;
+  .home {
+    padding: 50px 0;
   }
 
   .client-carousel .w-50 {
     width: 100%;
+  }
+
+  .alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .alert h2 {
+    padding: 0 0 20px 0;
   }
 }
 
@@ -495,8 +573,8 @@ footer {
     align-items: center;
   }
 
-  .home h2{
-      font-size: 35px;
+  .home h2 {
+    font-size: 35px;
   }
 
   .home .w-50 {
