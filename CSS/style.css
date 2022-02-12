@@ -606,7 +606,7 @@ nav {
 
 .form-control input,
 .form-control textarea {
-  width: 55%;
+  width: 57%;
   padding: 8px 16px;
   margin: 5px 0;
   border: none;
@@ -653,6 +653,40 @@ nav {
 .form-control button:hover {
   background-color: #ffce33;
   color: #151515;
+}
+
+.hidden{
+  display: none;
+}
+
+.icon-msg{
+  margin: 0 40px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #008000;
+}
+
+.submitted i, .another-one i{
+  font-size: 25px;
+  margin: 12px .5%;
+  padding: 0 5px;
+}
+
+.submitted .msg{
+  font-size: 20px;
+}
+
+.submitted .another-one{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 40px;
+  font-size: 20px;
+  color: rgb(87, 87, 235);
+  cursor: pointer;
 }
 
 /* footer design */
@@ -830,7 +864,7 @@ footer {
   }
 
   .form-control input, .form-control textarea{
-    width: 75%;
+    width: 80%;
   }
 
   .footer-links a {
@@ -902,6 +936,6 @@ footer {
   }
 
   .form-control input, .form-control textarea{
-    width: 90%;
+    width: 100%;
   }
 }

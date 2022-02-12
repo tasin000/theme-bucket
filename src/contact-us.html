@@ -65,7 +65,7 @@
         <section id="contact-form">
             <div class="container">
                 <div class="contact-us">
-                    <form action="" method="Post">
+                    <form action="" method="" onsubmit="submitForm()">
                         <div class="form-control">
                             <label for="Name">Name</label><br>
                             <input type="text" name="Name" id="name" placeholder="Name">
@@ -90,6 +90,20 @@
                             <button type="submit">Send Message</button>
                         </div>
                     </form>
+
+                    <div class="hidden">
+                        <div class="submitted">
+                            <div class="icon-msg">
+                                <i class="fa-solid fa-check"></i>
+                                <p class="msg">Message Sent!</p>
+                            </div>
+
+                            <div class="another-one">
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                                <p>Submit Another Response</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
