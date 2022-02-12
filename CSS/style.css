@@ -422,24 +422,24 @@ nav {
 }
 
 /* about us title - about-us.html */
-.about-us-title {
+.page-title {
   width: 75%;
   padding: 50px 20px;
 }
 
-.about-us-title h2 {
+.page-title h2 {
   color: #333333;
   font-size: 38px;
   margin: 10px 0;
 }
 
-.about-us-title p {
+.page-title p {
   color: #7a7a7a;
   font-size: 16px;
 }
 
 /* our work process - about-us.html */
-.work-process{
+.work-process {
   padding: 20px;
 }
 
@@ -464,7 +464,7 @@ nav {
   margin: 25px 0;
 }
 
-.process{
+.process {
   margin: 20px;
 }
 
@@ -526,7 +526,7 @@ nav {
 }
 
 /* qualities of an elite author - about-us.html */
-.elite-author{
+.elite-author {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -534,21 +534,51 @@ nav {
   padding: 0 20px;
 }
 
-.elite-author h2{
+.elite-author h2 {
   font-size: 28px;
   color: #333333;
   margin: 30px 0;
 }
 
-.elite-author p{
+.elite-author p {
   color: #7a7a7a;
   font-size: 16px;
 }
 
-.elite-author img{
+.elite-author img {
   display: block;
   width: 70%;
   margin: auto;
+}
+
+/* team members - our-team.html */
+.members{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.member{
+  margin: 10px;
+  padding: 30px;
+}
+
+.member img{
+  width: 78%;
+  display: block;
+  margin: auto;
+}
+
+.member h2{
+  font-size: 20px;
+  color: #151515;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.member p{
+  font-size: 14px;
+  color: #7f7f7f;
+  text-align: center;
 }
 
 /* footer design */
@@ -638,6 +668,11 @@ footer {
     align-items: center;
     margin: 0 3%;
   }
+
+  .members{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 768px and less */
@@ -694,23 +729,32 @@ footer {
     padding: 0 0 20px 0;
   }
 
-  .half{
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .half {
     width: 100%;
   }
 
-  .elite-author{
+  .elite-author {
     display: flex;
     flex-direction: column;
   }
 
-  .elite-author img{
+  .elite-author img {
     padding: 50px 0;
+  }
+
+  .member img{
+    width: 85%;
   }
 
   .footer-links a {
     margin: 0 2.5%;
   }
-  
+
   .footer-links i {
     margin: 0 2.5%;
   }
@@ -748,25 +792,30 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .about-content{
+  .about-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  .process{
+  .process {
     padding: 25px;
   }
 
-  .about-us-title{
+  .page-title {
     width: 100%;
     margin: 10px 0;
   }
 
-  .full-process{
+  .full-process {
     justify-content: center;
   }
 
-  .process{
+  .process {
     margin: 10px;
+  }
+
+  .members{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
