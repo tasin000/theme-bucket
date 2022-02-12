@@ -670,7 +670,7 @@ nav {
 
 .submitted i, .another-one i{
   font-size: 25px;
-  margin: 12px .5%;
+  margin: 12px 5px;
   padding: 0 5px;
 }
 
@@ -683,7 +683,7 @@ nav {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 40px;
+  margin: 10px 40px;
   font-size: 20px;
   color: rgb(87, 87, 235);
   cursor: pointer;
@@ -715,6 +715,7 @@ footer {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -724,7 +725,7 @@ footer {
 .footer-links a {
   text-decoration: none;
   color: #fff;
-  margin: 0 2%;
+  margin: 20px;
 }
 
 .footer-links a:hover {
@@ -734,7 +735,7 @@ footer {
 .footer-links i {
   font-size: 20px;
   color: #fff;
-  margin: 0 2%;
+  margin: 15px;
   cursor: pointer;
 }
 
