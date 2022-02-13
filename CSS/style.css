@@ -182,12 +182,9 @@ nav {
 .home {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 150px 0;
-}
-
-.home .w-50 {
   margin: 0 30px;
 }
 
@@ -879,10 +876,6 @@ footer {
 
 /* 600px and less */
 @media screen and (max-width: 600px) {
-  .w-50 {
-    width: 100%;
-  }
-
   .home {
     display: flex;
     flex-direction: column;
@@ -894,7 +887,7 @@ footer {
     font-size: 35px;
   }
 
-  .home .w-50 {
+  .home {
     margin: 0 auto;
     text-align: center;
   }
